@@ -13,8 +13,8 @@ exports.signup = (req, res) => {
             message: "Please enter all the credentials"
         });
     }
-    // let password = Math.random().toString(36).substring(7);
-    let password = 'abcd';
+    let password = Math.random().toString(36).substring(7);
+    // let password = 'abcd';
     const user = new UserModel({
         name: req.body.name,
         email: req.body.email,
