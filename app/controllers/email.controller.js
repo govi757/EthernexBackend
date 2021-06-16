@@ -2,7 +2,7 @@ var nodemailer = require('nodemailer');
 const appConfig = require('../../config/app.config');
 
 var transporter = nodemailer.createTransport({
-    ort: 465,               // true for 465, false for other ports
+    port: 465,               // true for 465, false for other ports
     host: appConfig.nodeMailerHost,
     auth: {
         user: appConfig.nodeMailerUserName,
